@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+    game1:
+        image: game
+        container_name: game1
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/usr/share/nginx/html
+
+    game2:
+        image: game
+        container_name: game2
+        ports:
+            - "8081:80"
+        volumes:
+            - .:/usr/share/nginx/html
